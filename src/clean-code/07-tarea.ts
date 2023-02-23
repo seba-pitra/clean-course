@@ -30,13 +30,13 @@
 
   class InputElement {
     public HtmlElement: HtmlElement;
-    public InputAttributes: InputAttributes;
-    public InputEvents: InputEvents;
+    public attributes: InputAttributes;
+    public events: InputEvents;
 
     constructor({ id, type, placeholder }: IInputElement) {
       this.HtmlElement = new HtmlElement(id, type);
-      this.InputAttributes = new InputAttributes(placeholder);
-      this.InputEvents = new InputEvents();
+      this.attributes = new InputAttributes(placeholder);
+      this.events = new InputEvents();
     }
   }
 
